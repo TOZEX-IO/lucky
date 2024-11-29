@@ -1,6 +1,5 @@
 const fs = require('fs')
 const ethers = require('ethers')
-require('colors')
 
 const provider = new ethers.providers.WebSocketProvider(
     'wss://eth-mainnet.g.alchemy.com/v2/k5d8RoDGOyxZmVWy2UPNowQlqFoZM3TX'

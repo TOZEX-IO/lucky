@@ -1,16 +1,10 @@
 const { fork } = require("child_process");
 var devnull = require("dev-null")
-const { program } = require('commander');
-const colors = require('colors');
-var fs = require("fs")
 var tries = 0, hits = 0
 var children = []
 
-program
-    .option("-c, --count <number>", "number of processes")
 
-var options = program.parse().opts()
-const count = parseInt(options.count) || 6
+const count = 6
 console.log(`starting ${count} processes`.yellow)
 
 for(var i = 0; i < count; i++){
